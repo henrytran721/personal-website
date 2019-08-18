@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3d4f968f.chunk.css",
+    "main.js": "/static/js/main.393a0e47.chunk.js",
+    "main.js.map": "/static/js/main.393a0e47.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.8a3f8b99.chunk.js": "/static/js/2.8a3f8b99.chunk.js",
+    "static/js/2.8a3f8b99.chunk.js.map": "/static/js/2.8a3f8b99.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e677def986a4177ef08f6581f9b65dbd.js": "/precache-manifest.e677def986a4177ef08f6581f9b65dbd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3d4f968f.chunk.css.map": "/static/css/main.3d4f968f.chunk.css.map",
+    "static/media/_variables.scss": "/static/media/LemonMilklight.c224ee64.otf",
+    "static/media/input.svg": "/static/media/input.132cf8fe.svg",
+    "static/media/map.svg": "/static/media/map.077e2e1d.svg",
+    "static/media/needsAndInsights.svg": "/static/media/needsAndInsights.26c9378b.svg",
+    "static/media/nimbusFinal.svg": "/static/media/nimbusFinal.787339b8.svg",
+    "static/media/post.svg": "/static/media/post.831bdc30.svg",
+    "static/media/prishi.png": "/static/media/prishi.89884a98.png",
+    "static/media/profile.png": "/static/media/profile.5d5867c2.png",
+    "static/media/prototypeOne.svg": "/static/media/prototypeOne.2a274bc6.svg",
+    "static/media/prototypeOneB.svg": "/static/media/prototypeOneB.fd7e9808.svg",
+    "static/media/prototypeTwo.svg": "/static/media/prototypeTwo.ef44f685.svg",
+    "static/media/prototypeTwoB.svg": "/static/media/prototypeTwoB.59de115a.svg",
+    "static/media/rishichildren.svg": "/static/media/rishichildren.f6b9f385.svg",
+    "static/media/userOne.svg": "/static/media/userOne.6437f158.svg",
+    "static/media/userThree.svg": "/static/media/userThree.f90d281a.svg",
+    "static/media/userTwo.svg": "/static/media/userTwo.e9d23447.svg",
+    "static/media/wireframe.svg": "/static/media/wireframe.5d54091f.svg"
+  }
+}

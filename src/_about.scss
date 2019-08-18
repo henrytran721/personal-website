@@ -1,0 +1,159 @@
+@mixin for-phone {
+    @media (min-width: 320px) and (max-width: 480px) { @content; }
+}
+
+@mixin for-desktop {
+    @media(min-width: 1200px) { @content; }
+}
+$pink: #FF00A2;
+$orange: #FF3434;
+.textContainer {
+    display: flex;
+    justify-content: center;
+    .aboutText {
+        font-family: 'LemonMilklight';
+        font-size: 3em;
+        padding-bottom:5px;
+        background: 
+        linear-gradient(to left, #0073E7, #10DC9C);
+        background-size:100% 2px;
+        background-position:bottom 30% left 0,bottom 5px left 0;
+        background-repeat:no-repeat;
+        p {
+            text-shadow: 2px 2px grey;
+        }
+    }
+}
+
+#box {
+  width: 85%;
+  height: 750px;
+  color: white;
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #fff;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(70deg, #10DC9C, #0073E7, #5A26D2);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+// inner gradient content
+.gradientFlex {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .firstRowGradient {
+        display: flex;
+        @include for-phone {
+            display: block;
+        }
+        .profile {
+            margin: 5%;
+            @include for-phone {
+                width: 40%;
+                height: 40%;
+                margin: 3% 27%;
+            }
+        }
+        .firstRowText {
+            color: black;
+            flex-grow: 1;
+            margin: 0 10%;
+            .firstHeader {
+                font-family: "LemonMilklight";
+                color: lighten(#0073E7, 10%);
+                @include for-phone {
+                    font-size: 0.8em;
+                    margin: 0 0 5% 0;
+                }
+            }
+            .firstInfo {
+                font-size: 0.6em;
+                font-family: "LemonMilklight";
+                 @include for-phone {
+                    font-size: 0.5em;
+                }
+            }
+        }
+    }
+    .secondRowGradient {
+        display: flex;
+        color: black;
+        justify-content: space-around;
+        margin: 0 5%;
+        font-family: "LemonMilklight";
+
+        @include for-phone {
+            display: block;
+        }
+
+        .mySkills {
+            padding-bottom:5px;
+            background: 
+            linear-gradient(to left,#0073E7, #10DC9C);
+            background-size:100% 2px;
+            background-position:bottom 60% left 0,bottom 5px left 0;
+            background-repeat:no-repeat;
+            @include for-phone {
+                background-position:bottom 15% left 0,bottom 5px left 0;
+                width: 61%;
+                margin: 0 17%;
+            }
+        }
+
+        ul {
+            li {
+                font-size: 0.6em;
+                @include for-phone {
+                    font-size: 0.45em;
+                }
+            }
+        }
+    }
+}
+
+#about {
+    @include for-phone {
+        width: 100%;
+    }
+}
+
+.lists {
+    display: flex;
+    justify-content: space-around;
+    @include for-desktop {
+        width: 40%;
+    }
+    @include for-phone {
+        display: flex;
+        justify-content: center;
+    }
+}

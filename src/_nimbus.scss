@@ -1,0 +1,285 @@
+$purple: #540199;
+
+@mixin for-phone {
+    @media (min-width: 320px) and (max-width: 480px) { @content; }
+}
+
+@mixin bodyText {
+       font-family: 'LemonMilklight';
+        font-size: 1.2em;
+        line-height: 2;
+}
+
+@mixin headerText {
+         font-family: 'Fontania';
+          font-size: 3em;
+            color: $purple;
+}
+
+@mixin container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 15%;
+    text-align: center;
+}
+#nimbusContainer {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    .firstLayer {
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(100% 0, 100% 100%, 51% 69%, 0 100%, 0 0);
+        background-image: url("https://wallpaperplay.com/walls/full/f/b/6/221310.jpg");
+        background-position: bottom;
+        z-index: -1;
+    }
+    .secondLayer {
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(100% 0, 100% 100%, 51% 69%, 0 100%, 0 0);
+        background: linear-gradient(120deg, #FF9696, #8C00FF);
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        opacity: 0.6;
+    }
+
+    .thirdLayer {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        
+        .textContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            .header {
+                font-size: 4.5em;
+                font-family: 'Fontania';
+            }
+            .description {
+                font-size: 2em;
+                font-family: 'LemonMilklight';
+                @include for-phone {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background: white;
+    z-index: 3;
+    margin: 3px 0;
+    }
+
+    .bar1, .bar2, .bar3 {
+        transition: 0.4s;
+    }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu {
+    flex-direction: column;
+    height: 100px;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    z-index: 5;
+}
+
+.sideNav {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    width: 0px;
+    height: 100%;
+    background: black;
+    color: white;
+    transition: 350ms ease-in-out;
+    
+    .sideNimbusText {
+        visibility: hidden;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        font-family: 'LemonMilklight';
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+            &:hover {
+                color: #0073E7;
+            }
+        }
+    }
+}
+
+.sideOverlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 3;
+}
+
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15%;
+    text-align: center;
+    margin-top: 35%;
+    @include for-phone {
+        margin-top: 151%;
+    }
+
+    .introHeader {
+            font-size: 3em;
+            font-family: 'Fontania';
+            color: #540199;
+    }
+
+    .introText {
+        font-size: 1.2em;
+        font-family: 'LemonMilklight';
+        line-height: 2;
+    }
+
+    img {
+        @include for-phone {
+            transform: scale(0.4);
+        }
+    }
+}
+
+.nimbusInfo {
+    margin: 5% 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 15%;
+    height: 300px;
+
+    @include for-phone {
+        display: block;
+        height: 415px;
+    }
+
+    .infoDiv {
+        display: flex;
+        flex-direction: column;
+
+        .dateDiv, .teammateDiv {
+            text-align: center;
+            .date, .teammates {
+                font-family: 'Fontania';
+                font-size: 2em;
+                color: $purple;
+            }
+            .dateMonth, .teammateNames {
+                font-family: 'LemonMilklight';
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .viewProjectBtn {
+        width: 20%;
+        @include for-phone {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    button {
+        border: none;
+        background: linear-gradient(to right, #C000FF, #8C00FF);
+        width: 100%;
+        height: 20%;
+        align-self: center;
+        color: white;
+        font-family: 'LemonMilklight';
+        font-size: 1.2em;
+        border-radius: 30px;
+        box-shadow: 4px 2px 2px #520096;
+
+        @include for-phone {
+            border-radius: 15px;
+            width: 50%;
+            height: 15%;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.problem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 15%;
+    text-align: center;
+
+    .problemHeader {
+        font-family: 'Fontania';
+        font-size: 3em;
+        color: $purple;
+    }
+
+    .problemText {
+        @include bodyText;   
+    }
+}
+
+.userScenario, .paperPrototyping, .wireframe, .web {
+    @include container;
+    .userHeader, .paperHeader, .wireframeHeader, .webHeader {
+        @include headerText;
+    }
+    .userText, .paperText, .wireframeText, .webText {
+        @include bodyText;
+    }
+}
+
+.wireframe {
+    img {
+        @include for-phone {
+            transform: scale(0.4);
+        }
+    }
+}
+
+.userScenario, .paperPrototyping {
+    img {
+        @include for-phone {
+            transform: scale(0.8);
+        }
+    }
+}
+
+
+.prototypeOne {
+    @include headerText;
+    font-size: 2em;
+}
+
