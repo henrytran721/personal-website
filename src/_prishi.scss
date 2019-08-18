@@ -50,6 +50,9 @@
             .header {
                 font-size: 4.5em;
                 font-family: 'Fontania';
+                @include for-phone {
+                    font-size: 3em;
+                }
             }
             .description {
                 font-size: 2em;
@@ -141,7 +144,6 @@
     margin: 0 15%;
     text-align: center;
     @include for-phone {
-        margin-top: 151%;
     }
 
     .introHeader {
