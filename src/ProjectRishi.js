@@ -5,6 +5,7 @@ import needsAndInsights from './images/needsAndInsights.svg';
 import map from './images/map.svg';
 import input from './images/input.svg';
 import post from './images/post.svg';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const PageContent = () => {
     return (
@@ -169,10 +170,11 @@ export default class ProjectRishi extends Component {
                             <div className='sideRishiOverlay'></div>
                             <div className='sideNav'>
                                 <div className='sideRishiText'>
-                                    {/* <Link to='/'><p>Home</p></Link> */}
+                                    <Link to='/'><p>Home</p></Link>
                                     <a href='https://drive.google.com/file/d/1m-7O5GxEYdHTUcdXK0E7fw0g3oXR6Vpb/view' target='_blank'><p>Resume</p></a>
-                                    <a><p>Nimbus</p></a>
-                                    <a><p>Personal Projects</p></a>
+                                    <Link to ='/nimbus'><p>Nimbus</p></Link>
+                                    <Link to ='/personal-projects'><p>Personal Projects</p></Link>
+                                    <Link to='/personal-portfolio'><p>Personal Portfolio</p></Link>
                                 </div>
                             </div>
                             <div className='textContent'>

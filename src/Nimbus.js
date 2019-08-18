@@ -10,7 +10,7 @@ import prototypeOneB from './images/prototypeOneB.svg';
 import prototypeTwo from './images/prototypeTwo.svg';
 import prototypeTwoB from './images/prototypeTwoB.svg';
 import wireframe from './images/wireframe.svg';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const PageContent = (props) => {
     return (
@@ -174,13 +174,6 @@ export default class Nimbus extends React.Component {
             this.state.sideMenu ? sideNimbusText.style.visibility = 'hidden'
                 : sideNimbusText.style.visibility = 'visible'
         }
-
-        if(!this.state.sideMenu) {
-            document.body.style.position = 'fixed';
-            document.body.style.top = '0';
-        } else {
-            document.body.style.position = '';
-        }
         this.setState({
             sideMenu: !this.state.sideMenu
         })
@@ -205,8 +198,9 @@ export default class Nimbus extends React.Component {
                                 <div className='sideNimbusText'>
                                     <Link to='/'><a onClick={this.removeFixed}><p>Home</p></a></Link>
                                     <a href='https://drive.google.com/file/d/1m-7O5GxEYdHTUcdXK0E7fw0g3oXR6Vpb/view' target='_blank'><p>Resume</p></a>
-                                    <a><p>Project RISHI</p></a>
-                                    <a><p>Personal Projects</p></a>
+                                    <Link to ='/prishi'><p>Project RISHI</p></Link>
+                                    <Link to ='/personal-projects'><p>Personal Projects</p></Link>
+                                    <Link to='/personal-portfolio'><p>Personal Portfolio</p></Link>
                                 </div>
                             </div>
                             <div className='textContent'>

@@ -94,7 +94,7 @@ export default class personalProjects extends Component {
                                     <a href='https://drive.google.com/file/d/1m-7O5GxEYdHTUcdXK0E7fw0g3oXR6Vpb/view' target='_blank'><p>Resume</p></a>
                                     <Link to='/nimbus'><p>Nimbus</p></Link>
                                     <Link to='/prishi'><p>Project RISHI</p></Link>
-                                    <a><p>Personal Portfolio</p></a>
+                                    <Link to='/personal-portfolio'><p>Personal Portfolio</p></Link>
                                 </div>
                             </div>
                             <div className='textContent'>
@@ -113,6 +113,7 @@ to learning the fundamentals of web development</p>
                                 cardHeader={'Personal Portfolio'}
                                 cardDescription={'Learn how I made my own personal portfolio'}
                                 button={'Learn More'}
+                                project={'/personal-portfolio'}
                             />
                             <ProjectCard
                                 cardHeader={'React Book Library'}

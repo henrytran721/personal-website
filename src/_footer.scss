@@ -54,7 +54,7 @@ html {
 
     .contact {
         color: white;
-        padding: 7% 0 0 0;
+        padding: 10% 0 0 0;
         font-family: 'Fontania';
         font-size: 6em;
         margin-bottom: 5%;
@@ -90,8 +90,9 @@ html {
 
         .footerLinkedin, .footerGithub {
             @include for-phone{
-            width: 15%;
-            height: 95%;}
+            width: 50%;
+            height: 95%;
+        }
         }
         .toolTip {
                 position: absolute;
@@ -124,4 +125,9 @@ html {
     font-family: 'LemonMilklight';
     color: white;
     padding: 2% 0 0 0;
+
+    @include for-phone {
+        text-align: end;
+        margin-right: 5%;
+    }
 }

@@ -57,8 +57,8 @@ export default class Footer extends Component {
                             <img onClick={this.copyToClip} className='footerMail' src = {mail} />
                             <span className='toolTip'>{this.state.toolTipText}</span>
                             </div>
-                            <img className='footerLinkedin' src={linkedin}/>
-                            <img className='footerGithub' src={github} />
+                            <a href='https://linkedin.com/in/henry-tran-0141ba162/' target='_blank'><img className='footerLinkedin' src={linkedin} /></a>
+                            <a href='https://github.com/henrytran721' target='_blank'><img className='footerGithub' src={github} /></a>
                         </div>
                         <p className='copyright'>Copyright Henry Tran 2019</p>
                     </div>

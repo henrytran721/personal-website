@@ -15,7 +15,7 @@ const PortfolioCard = (props) => {
                 <p className='header'>{props.header}</p>
                 <p className='description'>{props.description}</p>
                 <img src = {props.cardIcon} className='cardIcon' />
-                <Link to={props.url}><button>Learnnnn More</button></Link>
+                <Link to={props.url}><button>Learn More</button></Link>
             </div>
         </div>
     )
@@ -64,6 +64,7 @@ export default class Portfolio extends Component {
                         header={'Personal Projects'}
                         description={'Utilized web development skills to create projects that showcase my abilities'}
                         cardIcon={puzzle}
+                        url={'personal-projects#personalProjContainer'}
                     />
                </div>
             </div>

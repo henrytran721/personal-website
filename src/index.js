@@ -4,6 +4,7 @@ import App from './App';
 import Nimbus from './Nimbus';
 import ProjectRishi from './ProjectRishi';
 import PersonalProjects from './PersonalProjects';
+import PersonalPortfolio from './PersonalPortfolio';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import './index.css';
@@ -24,6 +25,7 @@ const routing = (
               <Route path="/nimbus" component={Nimbus} />
               <Route path="/prishi" component={ProjectRishi} />
               <Route path="/personal-projects" component={PersonalProjects} />
+              <Route path="/personal-portfolio" component={PersonalPortfolio} />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
