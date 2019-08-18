@@ -4,6 +4,7 @@ import mail from './images/mail.png';
 import linkedin from './images/linkedin.png';
 import github from './images/github.png';
 
+
 export default class Footer extends Component {
     //hello
     constructor(props) {

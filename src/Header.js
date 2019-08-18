@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './_header.scss';
 import './_variables.scss';
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 export default class Header extends Component {
@@ -109,10 +110,10 @@ export default class Header extends Component {
                 <div className='sideNav'>
                     <div className='sideNavText'>
                         <a href= 'https://drive.google.com/file/d/1m-7O5GxEYdHTUcdXK0E7fw0g3oXR6Vpb/view'><p>Resume</p></a>
-                        <a href='/nimbus'><p>Nimbus</p></a>
-                        <a href='/prishi'><p>Project RISHI</p></a>
-                        <a href='/personal-projects'><p>Personal Projects</p></a>
-                        <a href='/personal-portfolio'><p>Personal Portfolio</p></a>
+                        <Link to='/nimbus'><p>Nimbus</p></Link>
+                        <Link to='/prishi'><p>Project RISHI</p></Link>
+                        <Link to='/personal-projects'><p>Personal Projects</p></Link>
+                        <Link to='/personal-portfolio'><p>Personal Portfolio</p></Link>
                         <a onClick={this.sideMenuClose} href='#footerContainer'><p>Contact</p></a>
                     </div>
                 </div>
