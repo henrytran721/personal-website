@@ -1,0 +1,163 @@
+@mixin for-phone {
+    @media (min-width: 320px) and (max-width: 480px) { @content; }
+}
+
+#personalProjContainer {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    .firstLayer {
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(100% 0, 100% 100%, 51% 69%, 0 100%, 0 0);
+        background-image: url("https://wallpaperplay.com/walls/full/b/4/f/147137.jpg");
+        background-position: bottom;
+        z-index: -1;
+    }
+    .secondLayer {
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(100% 0, 100% 100%, 51% 69%, 0 100%, 0 0);
+        background: #045000;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        opacity: 0.6;
+    }
+
+    .thirdLayer {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+               .textContent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            .header {
+                font-size: 4.5em;
+                font-family: 'Fontania';
+                @include for-phone {
+                    text-align: center;
+                    font-size: 2.5em;
+                    margin-top: 25%;
+                }
+            }
+            .description {
+                font-size: 2em;
+                font-family: 'LemonMilklight';
+                text-align: center;
+                margin: 0 15%;
+                @include for-phone {
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+.cardHolder {
+    height: 600px;
+    margin: 5% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include for-phone {
+        display: block;
+
+    }
+    .pCardContainer {
+        height: 100%;
+        width: 23%;
+        position: relative;
+        flex-basis: 25%;
+        margin: 3% 3%;
+        @include for-phone {
+            width: 100%;
+            margin: 3% auto;
+        }
+        .pFirstLayer {
+            background: url('https://i.pinimg.com/originals/4c/5d/e5/4c5de537b0e12034418ebbb630907c06.jpg');
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            z-index: -1;
+        }
+
+        .pSecondLayer {
+            background: linear-gradient(to bottom, #4C4C4C, #003D07);
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            border-radius: 10px;
+            opacity: 0.6;
+        }
+
+        .pThirdLayer {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .cardBorder {
+                height: 95%;
+                width: 90%;
+                border-radius: 10px;
+                border: 2px solid white;
+                display: flex;
+                justify-content: center;
+
+                .textContent {
+                    display: flex;
+                    flex-direction: column;
+                    .header {
+                        font-family: 'Fontania';
+                        font-size: 2.5em;
+                        color: white;
+                        margin-top: 20%;
+                        text-align: center;
+                    }
+                    .description {
+                        text-align: center;
+                        font-family: 'LemonMilklight';
+                        font-size: 1.5em;
+                        color: white;
+                    }
+                    .cardButton {
+                        display: flex;
+                        justify-content: center;
+                        margin: 20% 0;
+                        height: 50%;
+
+                        button {
+                            background: none;
+                            border: 2px solid white;
+                            border-radius: 10px;
+                            width: 150px;
+                            height: 50px;
+                            color: white;
+                            font-family: 'LemonMilklight';
+                            font-size: 1.2em;
+                            transition: transform 350ms ease-in-out;
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
