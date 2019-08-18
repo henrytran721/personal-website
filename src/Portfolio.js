@@ -15,7 +15,9 @@ const PortfolioCard = (props) => {
                 <p className='header'>{props.header}</p>
                 <p className='description'>{props.description}</p>
                 <img src = {props.cardIcon} className='cardIcon' />
-                <Link to={props.url}><button>Learn More</button></Link>
+                <div className='learnBtn'>
+                    <Link to={props.url}><button>Learn More</button></Link>
+                </div>
             </div>
         </div>
     )

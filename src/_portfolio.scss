@@ -95,9 +95,6 @@
             border-radius: 5px;
             font-family: 'LemonMilklight';
             font-size: 1em;
-            position: absolute;
-            bottom: 8%;
-            left: 25%;
         }
     }
 }
@@ -111,4 +108,10 @@
 
 .toggleScale {
     transform: scale(1.2);
+}
+
+.learnBtn {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0 0 0;
 }
