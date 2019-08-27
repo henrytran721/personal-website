@@ -41,8 +41,8 @@ const PageContent = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className='viewProjectBtn'>
-                    <button>View Project</button>
+                <div className='viewProjectBtnNimbus'>
+                    <a href='http://nimbus-app.herokuapp.com/' target='_blank'><button>View Project</button></a>
                 </div>
             </div>
             <div className='problem'>

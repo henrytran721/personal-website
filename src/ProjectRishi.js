@@ -39,7 +39,7 @@ const PageContent = () => {
                     </div>
                 </div>
                 <div className='viewProjectBtn'>
-                    <button>View Project</button>
+                    <a href='http://project-rishi.herokuapp.com/' target='_blank'><button>View Project</button></a>
                 </div>
             </div>
             <div className='rishiProblem'>
