@@ -116,6 +116,11 @@ to learning the fundamentals of web development</p>
                                 project={'/personal-portfolio'}
                             />
                             <ProjectCard
+                                cardHeader={'Habit Tracker'}
+                                button={'View Project'}
+                                project={'https://react-habit-tracker.netlify.com'}
+                            />
+                            <ProjectCard
                                 cardHeader={'React Book Library'}
                                 button={'View Project'}
                                 project={'https://henrytran721.github.io/React-JS-BookList/'}
