@@ -119,7 +119,7 @@ export default class Header extends Component {
                 </div>
                 <div className='headerText'>
                   <p className='name'>Henry Tran</p>
-                  <p className='fed'>Front End Developer</p>
+                  <p className='fed'>Full Stack Developer</p>
                 </div>
             </div>
         )
