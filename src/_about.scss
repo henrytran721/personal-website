@@ -141,6 +141,13 @@ $orange: #FF3434;
 }
 
 #about {
+    display: flex;
+    margin: 5% 0;
+    img {
+        max-width: 600px;
+        max-height: 595px;
+        margin-left: 8%;
+    } 
     @include for-phone {
         width: 100%;
     }
