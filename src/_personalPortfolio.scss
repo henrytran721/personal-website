@@ -144,3 +144,14 @@
 .reusable {
     color: #0027A7;
 }
+
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .profilePic {
+        display: none;
+    }
+
+    svg {
+        box-shadow: 0;
+    }
+}

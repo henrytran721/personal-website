@@ -105,6 +105,16 @@ to learning the fundamentals of web development</p>
                         </div>
                         <div className='cardHolder'>
                             <ProjectCard
+                                cardHeader={'Twitter Clone'}
+                                button={'View Project'}
+                                project={'https://henri-twitter-test.herokuapp.com'}
+                            />
+                            <ProjectCard
+                                cardHeader={'Craigslist Redesign'}
+                                button={'View Project'}
+                                project={'https://craigslist-remake.herokuapp.com/'}
+                            />
+                            <ProjectCard
                                 cardHeader={'JavaScript Calculator'}
                                 button={'View Project'}
                                 project={'https://henrytran721.github.io/javascript-calculator/'}

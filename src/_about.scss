@@ -142,11 +142,24 @@ $orange: #FF3434;
 
 #about {
     display: flex;
+    justify-content: center;
     margin: 5% 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    svg {
+        box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.15);
+        @media(min-width: 320px) and (max-width: 480px) {
+            box-shadow: none;
+        }
+        border-radius: 0 10px 10px 0;
+        #Hey-I’m-Henry.-I’m-a, #Some-frameworks-and, #Outside-of-coding,-s {
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+    }
     img {
+        border-radius: 10px 0 0 10px;
         max-width: 600px;
         max-height: 595px;
-        margin-left: 8%;
     } 
     @include for-phone {
         width: 100%;

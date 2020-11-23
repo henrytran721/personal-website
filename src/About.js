@@ -7,7 +7,7 @@ export default class About extends Component {
     render() {
         return(
             <div id='about'>
-                <img src='https://i.imgur.com/5ax6Aj1.jpg' />
+                <img className='profilePic' src='https://i.imgur.com/5ax6Aj1.jpg' />
                 <svg width="642px" height="595px" viewBox="0 0 642 595" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <title>A4</title>
                 <desc>Created with Sketch.</desc>
@@ -26,19 +26,19 @@ export default class About extends Component {
                 <text id="ABOUT-ME" font-family="FontaniaRegular, Fontania" font-size="50" font-weight="normal" fill="#FFFFFF">
                 <tspan x="226" y="79">ABOUT ME</tspan>
                 </text>
-                <text id="Hey-I’m-Henry.-I’m-a" font-family="Avenir-Medium, Avenir" font-size="20" font-weight="400" fill="#FFFFFF">
+                <text id="Hey-I’m-Henry.-I’m-a" font-family="Helvetica" font-size="20" font-weight="400" fill="#FFFFFF">
                 <tspan x="26" y="133">Hey I’m Henry. I’m a Full Stack Developer originally from Los</tspan>
                 <tspan x="26" y="160">Angeles. I like to build web pages that take user interactions</tspan>
                 <tspan x="26" y="187">and design into account to fulfill the needs of the user</tspan>
                 <tspan x="26" y="214">experience. I am always curious about web architecture and</tspan>
                 <tspan x="26" y="241">am always looking for the next thing to add to my skillset.</tspan>
                 </text>
-                <text id="Some-frameworks-and" font-family="Avenir-Medium, Avenir" font-size="20" font-weight="400" fill="#FFFFFF">
+                <text id="Some-frameworks-and" font-family="Helvetica" font-size="20" font-weight="400" fill="#FFFFFF">
                 <tspan x="25" y="324">Some frameworks and languages I’ve worked with are HTML,</tspan>
                 <tspan x="25" y="351">CSS, Sass, JavaScript, MongoDB, Express.js, Node.js, React.js,</tspan>
                 <tspan x="25" y="378">Wordpress Environment, PHP, and many more! </tspan>
                 </text>
-                <text id="Outside-of-coding,-s" font-family="Avenir-Medium, Avenir" font-size="20" font-weight="400" fill="#FFFFFF">
+                <text id="Outside-of-coding,-s" font-family="Helvetica" font-size="20" font-weight="400" fill="#FFFFFF">
                 <tspan x="19" y="466">Outside of coding, some of my hobbies include working out,</tspan>
                 <tspan x="19" y="493">playing video games (Valorant and Fortnite), and exploring nature.</tspan>
                 </text>
